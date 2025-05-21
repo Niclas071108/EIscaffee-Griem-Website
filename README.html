@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eiscafé Griem Trittau – Hausgemachtes Eis</title>
+  <meta name="description" content="Eiscafé Griem in Trittau – traditionelles, hausgemachtes Eis, liebevoll serviert. Mit Eiskarte, Galerie und Kontaktformular." />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(#fffaf5, #ffe6e0);
+      color: #333;
+    }
+    header {
+      background: url('https://t3.ftcdn.net/jpg/01/58/60/22/360_F_158602271_9cQPOynh3Zxk4ifbWF9qhDtGtOdHavOa.jpg') center/cover no-repeat;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      background-color: #d63031;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffeaa7;
+    }
+    main {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 4rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 200px;
+    }
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 1rem;
+      font-size: 1rem;
+      background-color: #d63031;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e17055;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 12px;
+    }
+    footer {
+      background-color: #d63031;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      main {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Eiscafé Griem</h1>
+    <p>Traditionelles Eisvergnügen in Trittau</p>
+  </header>
+
+  <nav>
+    <a href="#ueber-uns">Über uns</a>
+    <a href="#eiskarte">Eiskarte</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <img src="https://eis-cafe-griem.de/wp-content/uploads/2024/02/Header.jpg" />
+    </section>
+
+    <section id="ueber-uns">
+      <h2>Über uns</h2>
+      <p>Im Herzen von Trittau gelegen, verwöhnt Sie das Eiscafé Griem seit Jahrzehnten mit hausgemachtem Eis in zahlreichen köstlichen Sorten. Bei uns steht Qualität und Gastfreundschaft im Mittelpunkt.</p>
+    </section>
+
+    <section id="eiskarte">
+      <h2>Eiskarte</h2>
+      <p>Genießen Sie unsere beliebten Eisbecher, alle liebevoll zubereitet:</p>
+      <ul style="list-style: none; padding-left: 0;">
+        <li><strong>Spaghetti-Eis</strong> – Vanille-Eis, Erdbeersoße, Sahne und weiße Schokoraspel <span style="float:right;">6,70 €</span></li>
+        <li><strong>Schoko-Spaghetti-Eis</strong> – Vanille-Eis, Schokosoße, Sahne und weiße Schokoraspel <span style="float:right;">6,70 €</span></li>
+        <li><strong>Lakritz-Spaghetti-Eis</strong> – Vanille-Eis, Lakritz-Soße, Flakes & Sahne <span style="float:right;">6,90 €</span></li>
+        <li><strong>Bananensplit</strong> – Eis, Banane, Schokosoße und Sahne <span style="float:right;">6,90 €</span></li>
+        <li><strong>Schoko-Becher</strong> – Eis, Schokosoße, Borkenschokolade und Sahne <span style="float:right;">6,90 €</span></li>
+        <li><strong>Karamel-Becher</strong> – Eis, Karamelsoße, Krokantstreusel und Sahne <span style="float:right;">6,90 €</span></li>
+        <li><strong>Walnuss-Becher</strong> – Walnuss-Eis, kandierte Walnüsse, Haselnusskrokant und Sahne <span style="float:right;">6,90 €</span></li>
+        <li><strong>Apfelmus-Becher</strong> – Vanille-Eis, Apfelmus und Sahne <span style="float:right;">6,90 €</span></li>
+        <li style="margin-top: 1rem;"><em>…und vieles mehr!</em></li>
+      </ul>
+    </section>
+
+    <section id="galerie">
+      <h2>Galerie</h2>
+      <div class="gallery">
+        <img src="https://eis-cafe-griem.de/wp-content/uploads/2023/06/Bienchen-300x290.png" alt="Eis 1">
+        <img src="https://images.noz-mhn.de/img/44617065/crop/cbase_4_3-w1200/2058052579/496072156/imago0084818459h.jpg" alt="Eis 2">
+        <img src="https://images.noz-mhn.de/img/42440157/crop/ccom.escenic.master-w628/412847763/1318154081/griem-trittau.png" alt="Eis 3">
+        <img src="https://lh3.googleusercontent.com/proxy/ucFRU3oUMRRJ8-fUitVHv_Uvi9r6jInlf6MmK5FPbQzs4yEdV0RCAv_0Hd5_87CGekQ-_RUPqpHCH99eZ21T3J8GjR5K8OSV026bWcP-jg" alt="Eis 4">
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p><strong>Adresse:</strong> Poststraße 33, 22946 Trittau</p>
+      <p><strong>Telefon:</strong> 04154 / 1234</p>
+      <p><strong>Email:</strong> kontakt@eis-cafe-griem.de</p>
+      <p><strong>Öffnungszeiten:</strong> Täglich von 11:00 bis 20:00 Uhr</p>
+      <h3>Schreiben Sie uns:</h3>
+      <form>
+        <input type="text" placeholder="Ihr Name" required />
+        <input type="email" placeholder="Ihre E-Mail" required />
+        <textarea placeholder="Ihre Nachricht" rows="5" required></textarea>
+        <button type="submit">Nachricht senden</button>
+      </form>
+      <h3>So finden Sie uns:</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.6231791682973!2d10.408687716245588!3d53.60748808003373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b1c973c228a4fb%3A0x58c9158b2bcb53e3!2sPoststra%C3%9Fe%2033%2C%2022946%20Trittau!5e0!3m2!1sde!2sde!4v1683482858064!5m2!1sde!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Eiscafé Griem. Alle Rechte vorbehalten.</p>
+    <p><a href="#" style="color:white; text-decoration:underline;">Impressum</a> | <a href="#" style="color:white; text-decoration:underline;">Datenschutz</a></p>
+  </footer>
+</body>
+</html>
